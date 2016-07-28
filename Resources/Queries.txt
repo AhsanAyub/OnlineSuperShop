@@ -1,0 +1,9 @@
+** Helpful Quries from internet:
+
+1. Inserting row having unsure of fk auto_incremented
+INSERT INTO orders (`payerName`, `address`)
+VALUES ('james', '1 brown');
+
+INSERT INTO order_items (`order_id`, `type`, `price`)
+VALUES (LAST_INSERT_ID(), 'AN94', 3000);
+
